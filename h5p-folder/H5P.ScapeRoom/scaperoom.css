@@ -1,0 +1,235 @@
+header {
+  background-color: lightsalmon;
+  grid-area: header;
+  display: grid;
+  grid-template-areas: 'h1 p p p button';
+}
+
+
+#general {
+  background-color: #DEDEDE;
+  border: 4px solid;
+  padding: 0.25em 0.5em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 27em;
+}
+
+.window-notice {
+  background: rgba(33, 41, 52, .85);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+}
+
+.window-notice .content {
+  background: #fff;
+  border-radius: 0.5em;
+  border: 0.2em solid;
+  box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 600px;
+  min-width: 320px !important;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.3rem;
+  align-items: center;
+  text-align: center;
+}
+
+#vidas {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+.vidaimg {
+  width: 2em;
+  height: auto;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+#pausa {
+  background-color: green;
+  margin: 0.2em;
+}
+
+#pausa:hover {
+  background-color: darkgreen;
+}
+
+.pline {
+  border: 1px solid;
+  border-radius: 16px;
+  padding: 0.25em 0.5em;
+  text-align: center;
+}
+
+select {
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /*Lo necesito para poder esconder la flecha normal*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image:
+  linear-gradient(45deg, transparent 50%, blue 50%),
+  linear-gradient(135deg, blue 50%, transparent 50%),
+  linear-gradient(to right, skyblue, skyblue);
+  background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  100% 0;
+  background-size:
+  5px 5px,
+  5px 5px,
+  2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+.draggable-items {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem 1.5rem 1rem;
+  transition: opacity 0.5s;
+}
+
+.draggable {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0rem 0.5rem;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+
+.draggable:hover {
+  opacity: 0.5;
+}
+
+.matching-pairs {
+  transition: opacity 0.5s;
+}
+
+.matching-pair {
+  height: 6rem;
+  width: 22rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.matching-pair span {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+}
+
+.label {
+  width: 15rem;
+  font-size: 2rem;
+}
+
+.droppable {
+  width: 6rem;
+  font-size: 4rem;
+  background-color: #fff;
+  border: 3px dashed #111;
+  transition: 0.2s;
+}
+
+.droppable-hover {
+  background-color: #bee3f0;
+  transform: scale(1.1);
+}
+
+.dropped {
+  border-style: solid;
+}
+
+.dragged {
+  user-select: none;
+  opacity: 0.1;
+  cursor: default;
+}
+
+.draggable.dragged:hover {
+  opacity: 0.1;
+}

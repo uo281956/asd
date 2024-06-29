@@ -1,0 +1,422 @@
+{
+  "id": "7822e100-bc57-41ee-9750-967946c1d3f8",
+  "version": "2.0",
+  "name": "scaproom",
+  "url": "http://localhost/GitApp/",
+  "tests": [{
+    "id": "7eb2a833-ef7f-40dc-b831-7e1e5a35ff21",
+    "name": "ConfigurarPartida",
+    "commands": [{
+      "id": "a2e80c42-6080-4d55-b533-f7131b8449ee",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GitApp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b3a1b7a-d44b-4f7c-b77d-bca9ed528e98",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2fe39f8-868b-486a-883f-c32613bec7f0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d1f1ca8-2781-44f8-9b31-0cc0575972a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=dif",
+      "targets": [
+        ["id=dif", "id"],
+        ["css=#dif", "css:finder"],
+        ["xpath=//select[@id='dif']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/p/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac25b61-3fd5-44e3-ac39-822610cbc028",
+      "comment": "",
+      "command": "select",
+      "target": "id=dif",
+      "targets": [],
+      "value": "label=Medio"
+    }, {
+      "id": "73b376bd-a2d1-4d7f-9c39-4160ecc20daa",
+      "comment": "",
+      "command": "click",
+      "target": "id=num",
+      "targets": [
+        ["id=num", "id"],
+        ["css=#num", "css:finder"],
+        ["xpath=//select[@id='num']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/p[2]/select", "xpath:idRelative"],
+        ["xpath=//p[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edccb8e4-5fea-4fe6-b80a-a173353009a9",
+      "comment": "",
+      "command": "select",
+      "target": "id=num",
+      "targets": [],
+      "value": "label=3"
+    }, {
+      "id": "3ee0717a-4564-4f99-83bb-b21d67a8af66",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//select[@id='cont']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/p[2]/select[2]", "xpath:idRelative"],
+        ["xpath=//p[2]/select[2]", "xpath:position"],
+        ["xpath=//select[contains(.,'Conceptos\nBasica\nAlgoritmos\nMix')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e246c546-b96d-4368-bb1d-d028f478394a",
+      "comment": "",
+      "command": "select",
+      "target": "id=cont",
+      "targets": [],
+      "value": "label=Algoritmos"
+    }]
+  }, {
+    "id": "c0760a8c-7cc2-4f2a-9873-3af1eb324e3d",
+    "name": "JugarPartida",
+    "commands": [{
+      "id": "87023f89-7b35-40ec-b69b-d9aebcb0f6a3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GitApp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6890002-b664-4298-ac89-f23448efb3af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04e0d71d-0517-46c5-8f41-67731a1b6f33",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3c5d16a-e7ff-4026-bee2-b845ae5a9e18",
+      "comment": "",
+      "command": "click",
+      "target": "id=cont",
+      "targets": [
+        ["id=cont", "id"],
+        ["css=#cont", "css:finder"],
+        ["xpath=//select[@id='cont']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/p[2]/select[2]", "xpath:idRelative"],
+        ["xpath=//p[2]/select[2]", "xpath:position"],
+        ["xpath=//select[contains(.,'Conceptos\nBasica\nAlgoritmos\nMix')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bceae024-84e6-4cd0-9360-9cb1fe97815a",
+      "comment": "",
+      "command": "select",
+      "target": "id=cont",
+      "targets": [],
+      "value": "label=Algoritmos"
+    }, {
+      "id": "1d4cc64f-8187-43ea-9f6d-6e81fd584d6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='m.comenzar()']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/p[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Comenzar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "797b0cd0-4192-4852-b464-48cc093edcf7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ta",
+      "targets": [
+        ["id=ta", "id"],
+        ["css=#ta", "css:finder"],
+        ["xpath=//textarea[@id='ta']", "xpath:attributes"],
+        ["xpath=//section[@id='pruebadiv']/p[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8064b75b-8a38-40c2-afe3-75da945a2142",
+      "comment": "",
+      "command": "type",
+      "target": "id=ta",
+      "targets": [
+        ["id=ta", "id"],
+        ["css=#ta", "css:finder"],
+        ["xpath=//textarea[@id='ta']", "xpath:attributes"],
+        ["xpath=//section[@id='pruebadiv']/p[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "return 111"
+    }, {
+      "id": "86c86515-5afc-41d8-afbd-d730c6664efc",
+      "comment": "",
+      "command": "click",
+      "target": "id=ans",
+      "targets": [
+        ["id=ans", "id"],
+        ["css=#ans", "css:finder"],
+        ["xpath=//textarea[@id='ans']", "xpath:attributes"],
+        ["xpath=//section[@id='pruebadiv']/textarea", "xpath:idRelative"],
+        ["xpath=//section/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7586c771-0fa5-44c6-a020-d31e1646ef60",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(6) > button",
+      "targets": [
+        ["css=p:nth-child(6) > button", "css:finder"],
+        ["xpath=//button[@onclick='pythonEvaluate()']", "xpath:attributes"],
+        ["xpath=//section[@id='pruebadiv']/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ejecutar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb4bd005-cf5d-4890-a429-80295af70222",
+      "comment": "",
+      "command": "click",
+      "target": "id=com",
+      "targets": [
+        ["id=com", "id"],
+        ["css=#com", "css:finder"],
+        ["xpath=//button[@id='com']", "xpath:attributes"],
+        ["xpath=//section[@id='pruebadiv']/p[4]/button", "xpath:idRelative"],
+        ["xpath=//p[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Comprobar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5999b7ed-5c3c-460b-b165-0201c157b6e0",
+    "name": "PausarYReanudarPartida",
+    "commands": [{
+      "id": "9b33f504-6e27-4e4f-9aeb-360d168d2270",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GitApp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48f46baa-d8fd-4656-888c-6907dad08192",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c55c9b1-cee8-4865-aae7-598fd2cde12b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff64f990-b6a2-4f86-985d-f70ec0b24fdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='m.comenzar()']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/p[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Comenzar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac88694-668d-478a-ba99-0b86053a22c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=pausa",
+      "targets": [
+        ["id=pausa", "id"],
+        ["css=#pausa", "css:finder"],
+        ["xpath=//button[@id='pausa']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/header/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pausa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d40b6d2b-6126-4338-85b0-0c3912f0e5f1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=pausa",
+      "targets": [
+        ["id=pausa", "id"],
+        ["css=#pausa", "css:finder"],
+        ["xpath=//button[@id='pausa']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/header/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pausa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f193fbe-d1b2-4ff3-a767-1d1799f4fb7e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=pausa",
+      "targets": [
+        ["id=pausa", "id"],
+        ["css=#pausa", "css:finder"],
+        ["xpath=//button[@id='pausa']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/header/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pausa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e43a2dd-5fdd-47d0-bafb-cd93f6d5c68d",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > button:nth-child(1)",
+      "targets": [
+        ["css=div > button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='ocultarPausa()']", "xpath:attributes"],
+        ["xpath=//div[@id='window-notice']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reanudar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2a90e6d5-838d-4f36-88a8-a75feeb35157",
+    "name": "SalirPartida",
+    "commands": [{
+      "id": "2f043712-50e8-4117-92f7-42f8245c51df",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GitApp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f26942-fd28-4367-afd7-75682425c86a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2a3b369-8d09-4a1e-906f-c8cea2e3d30b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4b6f8fc-a8d2-41e7-9013-597dcaddd956",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='m.comenzar()']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/p[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Comenzar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d031a51c-afa5-45ee-b16c-19d94b0c40aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=pausa",
+      "targets": [
+        ["id=pausa", "id"],
+        ["css=#pausa", "css:finder"],
+        ["xpath=//button[@id='pausa']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/header/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pausa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46f3d8e4-d43e-4f42-b68f-8302c8ff0c1e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=pausa",
+      "targets": [
+        ["id=pausa", "id"],
+        ["css=#pausa", "css:finder"],
+        ["xpath=//button[@id='pausa']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/header/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pausa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4172ab9-e85c-4039-919b-d3e9d1544d19",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=pausa",
+      "targets": [
+        ["id=pausa", "id"],
+        ["css=#pausa", "css:finder"],
+        ["xpath=//button[@id='pausa']", "xpath:attributes"],
+        ["xpath=//div[@id='general']/header/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pausa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28eb6134-4229-4622-a406-38ff81f3118a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick='cargarMenu()']", "xpath:attributes"],
+        ["xpath=//div[@id='window-notice']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cda6eecc-4311-4986-b15a-529629a2e869",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7eb2a833-ef7f-40dc-b831-7e1e5a35ff21"]
+  }],
+  "urls": ["http://localhost/GitApp/"],
+  "plugins": []
+}

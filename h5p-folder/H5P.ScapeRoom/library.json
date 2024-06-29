@@ -1,0 +1,20 @@
+{
+  "title": "Scape Room",
+  "description": "Displays a Scape Room Game to learn Python",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 11,
+  "runnable": 1,
+  "author": "Pelayo del Campo",
+  "machineName": "H5P.ScapeRoom",
+  "preloadedJs": [
+    {
+      "path": "scaperoom.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "scaperoom.css"
+    }
+  ]
+}

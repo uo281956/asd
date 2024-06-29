@@ -1,0 +1,12 @@
+{
+  "title": "Scape room",
+  "language": "es",
+  "author": "Pelayo del Campo",
+  "preloadedDependencies": [{
+    "machineName": "H5P.ScapeRoom",
+    "majorVersion": 1,
+    "minorVersion": 0 
+  }],
+  "mainLibrary": "H5P.ScapeRoom",
+  "embedTypes": ["div"]
+}

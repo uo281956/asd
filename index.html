@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <title>Scape Room</title>
+
+  <meta name="author" content="Pelayo del Campo"/>
+  <meta name="description" content="Pagina para ejecutar el H5P de scape room"/>
+  <meta name="keywords" content="scape, room, h5p, gamificacion"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <div id='h5p-container'></div>
+  <script type="text/javascript" src="assets/main.bundle.js"></script>
+  <script>
+    const el = document.getElementById('h5p-container');
+    const options = {
+      h5pJsonPath:  './h5p-folder',
+      frameJs: './assets/frame.bundle.js',
+      frameCss: './assets/styles/h5p.css',
+    }
+    new H5PStandalone.H5P(el, options);
+  </script>
+</body>
+</html>
